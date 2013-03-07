@@ -1,0 +1,8 @@
+.PHONY: all libs clean
+
+all: $(SHLIB)
+
+$(SHLIB): libs
+
+clean:
+	rm -f *.so *.o
